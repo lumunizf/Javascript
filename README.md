@@ -1,3 +1,3 @@
 # Javascript
 
-Exercícios e experimentações do curso de Javascript.
+Exercises and experiments in javascript.
