@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<h4>Imprima todos os números entre 30 e 40 (inclusive 30 e 40), porém os números 33 e 37 não devem ser impressos!
+    No final escreva a palavra "FIM".</h4>
+    
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var numero = 30;
+
+    while(numero <= 40) {
+        if (numero == 33 || numero == 37) {
+            mostra(" ");
+        }
+        else {
+            mostra(numero);
+            numero = numero + 2; 
+        }        
+    }
+    mostra("FIM");
+</script>

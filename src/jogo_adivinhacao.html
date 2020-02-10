@@ -1,0 +1,52 @@
+ <meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function sorteia(n) {
+
+        return Math.round(Math.random() * n);
+        }    
+
+    var numeroPensado = sorteia(10);
+    // o comando abaixo informa o número sorteado no console (dev tools)
+    //console.log(numeroPensado);
+
+    var tentativas = 1;
+
+    while(tentativas <= 3) {
+
+     var chute = parseInt(prompt("Já pensei. Qual número você acha que é?"));
+        if(chute == numeroPensado) {
+
+                mostra("Uau! Você ACERTOU, pois eu pensei no " + numeroPensado);
+                break;
+
+            } else {
+
+                if(chute > numeroPensado) {
+
+                    mostra("Você errou! Seu chute é MAIOR que o número pensado!");
+
+                } else {
+
+                    mostra("Você errou! Seu chute é MENOR que o número pensado!");
+                }
+
+            }
+
+            tentativas++;
+    }
+
+    mostra("FIM");
+
+</script>

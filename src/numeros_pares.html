@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<h4>Imprima todos os números pares entre 1 e 100 e no final escreva a palavra "FIM".</h4>
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var numero = 2;
+
+    while(numero <= 100) {
+        mostra(numero);
+        numero = numero + 2;
+    }
+
+    mostra("FIM");
+</script>

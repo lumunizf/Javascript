@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+<h4>Código para calcular a média de idade com o laço while.</h4>
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var totalFamiliares = parseInt(prompt("Quantos familiares você possui?"));
+
+    var numero = 1;
+    var totalIdades = 0;
+
+    while(numero <= totalFamiliares) {
+    	var idade = parseInt(prompt("Informe a idade do seu familiar:"));
+    	totalIdades = totalIdades + idade;
+    	numero = numero + 1; // ou numero++;
+    } 
+
+    var mediaIdade = totalIdades/totalFamiliares;
+
+    mostra("A média de idade dos seus familiares é de " + Math.round(mediaIdade) + " anos.");
+
+
+</script>

@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<h4>Código para calcular a tabuada com o laço for.</h4>
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+  
+    var tabuada = parseInt(prompt("Informe a tabuada a ser calculada."));
+
+    var multiplicador = 1;
+
+    for (var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+    	mostra(tabuada * multiplicador);
+    }
+
+    mostra("FIM");
+
+</script>
